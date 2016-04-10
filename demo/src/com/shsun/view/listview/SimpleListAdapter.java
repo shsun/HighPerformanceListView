@@ -5,6 +5,8 @@ import java.util.List;
 import org.lee.android.R;
 
 import com.shsun.view.listview.AsyncImageLoader.OnImageLoaderListener;
+import com.shsun.view.listview.cell.CellData;
+import com.shsun.view.listview.cell.ViewCache;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -16,12 +18,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class ImageAndTextListAdapter extends ArrayAdapter<ImageAndText> {
+public class SimpleListAdapter extends ArrayAdapter<CellData> {
 
     private ListView listView;
     private AsyncImageLoader asyncImageLoader;
 
-    public ImageAndTextListAdapter(Activity activity, List<ImageAndText> imageAndTexts, ListView listView) {
+    public SimpleListAdapter(Activity activity, List<CellData> imageAndTexts, ListView listView) {
         super(activity, 0, imageAndTexts);
         
         this.listView = listView;
@@ -43,7 +45,7 @@ public class ImageAndTextListAdapter extends ArrayAdapter<ImageAndText> {
         } else {
             viewCache = (ViewCache) rowView.getTag();
         }
-        ImageAndText imageAndText = getItem(position);
+        CellData imageAndText = getItem(position);
 
         // Load the image and set it on the ImageView
         String imageUrl = imageAndText.getImageUrl();
