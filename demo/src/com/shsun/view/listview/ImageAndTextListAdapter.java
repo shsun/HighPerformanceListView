@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.lee.android.R;
 
-import com.shsun.view.listview.AsyncImageLoader.ImageCallback;
+import com.shsun.view.listview.AsyncImageLoader.OnImageLoaderListener;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -49,12 +49,18 @@ public class ImageAndTextListAdapter extends ArrayAdapter<ImageAndText> {
         String imageUrl = imageAndText.getImageUrl();
         ImageView imageView = viewCache.getImageView();
         imageView.setTag(imageUrl);
-        Drawable cachedImage = asyncImageLoader.loadDrawable(position, imageUrl, new ImageCallback() {
-            public void imageLoaded(Drawable imageDrawable, String imageUrl) {
+        Drawable cachedImage = asyncImageLoader.loadDrawable(position, imageUrl, new OnImageLoaderListener() {
+            public void onSuccess(Drawable imageDrawable, String imageUrl) {
                 ImageView imageViewByTag = (ImageView) listView.findViewWithTag(imageUrl);
                 if (imageViewByTag != null) {
                     imageViewByTag.setImageDrawable(imageDrawable);
                 }
+            }
+
+            @Override
+            public void onFail(String imageUrl) {
+                // TODO Auto-generated method stub
+                
             }
         });
         // 
