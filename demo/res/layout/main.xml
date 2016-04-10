@@ -4,45 +4,19 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
+	
+	<TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:text="@string/hello"
     />
-    
 
-    
-    
    <Button 
     android:id="@+id/mylistview_btn"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="@string/s_mylistview_btn"
     />
-    
-    
-    
-    <Button 
-    android:id="@+id/simpleCursorAdapter_btn"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/s_simpleCursorAdapter_btn"
-    />
-    
-    <Button 
-    android:id="@+id/simpleAdapter_btn"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/s_simpleAdapter_btn"
-    />
-    
-    <Button 
-    android:id="@+id/myAdapter_btn"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/s_myAdapter_btn"
-    />
-    
     
     
 </LinearLayout>

@@ -1,4 +1,4 @@
-package cn.wangmeng.test;
+package cn.shsun.view.listview;
 
 public class ImageAndText {
         private String imageUrl;

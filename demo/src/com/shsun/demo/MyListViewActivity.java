@@ -1,16 +1,16 @@
-package org.lee.android;
+package com.shsun.demo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.wangmeng.test.ImageAndText;
-import cn.wangmeng.test.ImageAndTextListAdapter;
+import cn.shsun.view.listview.ImageAndText;
+import cn.shsun.view.listview.ImageAndTextListAdapter;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MyListView extends Activity {
+public class MyListViewActivity extends Activity {
 
     private ListView listView;
 
