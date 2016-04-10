@@ -1,4 +1,4 @@
-package cn.shsun.view.listview;
+package com.shsun.view.listview;
 
 import android.os.Handler;
 import android.os.Looper;

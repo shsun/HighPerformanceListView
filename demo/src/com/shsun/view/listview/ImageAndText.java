@@ -1,4 +1,4 @@
-package cn.shsun.view.listview;
+package com.shsun.view.listview;
 
 public class ImageAndText {
         private String imageUrl;

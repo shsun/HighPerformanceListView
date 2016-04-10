@@ -3,8 +3,9 @@ package com.shsun.demo;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.shsun.view.listview.ImageAndText;
-import cn.shsun.view.listview.ImageAndTextListAdapter;
+import com.shsun.view.listview.ImageAndText;
+import com.shsun.view.listview.ImageAndTextListAdapter;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;

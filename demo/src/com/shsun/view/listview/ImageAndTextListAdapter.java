@@ -1,10 +1,11 @@
-package cn.shsun.view.listview;
+package com.shsun.view.listview;
 
 import java.util.List;
 
 import org.lee.android.R;
 
-import cn.shsun.view.listview.AsyncImageLoader.ImageCallback;
+import com.shsun.view.listview.AsyncImageLoader.ImageCallback;
+
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
